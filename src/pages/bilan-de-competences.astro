@@ -6,13 +6,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/src/styles/global.css" />
   <title>Bilan de compétences à Bordeaux – Envoltalents | Latresne</title>
   <meta name="description" content="Bilan de compétences à Latresne (Bordeaux Rive Droite) avec Envoltalents. Certifié Qualiopi, éligible CPF. Clarifiez votre projet professionnel et épanouissez-vous. Premier entretien gratuit." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <style>
+    @import "tailwindcss";
     body { font-family: 'Inter', sans-serif; background-color: #fafaf9; color: #1c1917; }
     .font-heading { font-family: 'Playfair Display', serif; }
     details summary::-webkit-details-marker { display: none; }
@@ -28,8 +28,7 @@
     .delay-3 { animation-delay: 0.3s; }
     .delay-4 { animation-delay: 0.4s; }
   </style>
-  <link rel="stylesheet" href="/src/styles/global.css" />
-</head>
+  </head>
 <body class="bg-stone-50 text-stone-900">
 
   <!-- ===================== HEADER ===================== -->
@@ -53,6 +52,7 @@
         <a href="/#avis" class="hover:text-violet-700 transition-colors">Témoignages</a>
         <a href="/#apropos" class="hover:text-violet-700 transition-colors">À propos</a>
         <a href="/#faq" class="hover:text-violet-700 transition-colors">FAQ</a>
+        <a href="/formations" class="hover:text-violet-700 transition-colors">Formations</a>
       </nav>
 
       <a href="/#contact"
