@@ -1,0 +1,526 @@
+---
+// Envoltalents - Page Orientation scolaire
+---
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orientation scolaire – Envoltalents | Latresne (Bordeaux)</title>
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <meta name="description" content="Accompagnement en orientation scolaire pour lycéens et étudiants à Latresne (Bordeaux). Questionnaires psychométriques, bilan personnalisé, conseils Parcoursup. Premier entretien gratuit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; background-color: #fafaf9; color: #1c1917; }
+    .font-heading { font-family: 'Playfair Display', serif; }
+    details summary::-webkit-details-marker { display: none; }
+    .faq-icon { transition: transform 0.3s ease; }
+    details[open] .faq-icon { transform: rotate(45deg); }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .reveal { animation: fadeUp 0.7s ease forwards; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+  </style>
+  <link rel="stylesheet" href="/src/styles/global.css" />
+</head>
+<body class="bg-stone-50 text-stone-900">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="sticky top-0 z-50 bg-stone-50/90 backdrop-blur border-b border-stone-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-violet-600 flex items-center justify-center">
+          <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <div>
+          <span class="font-heading font-semibold text-stone-900 text-lg leading-none">Envoltalents</span>
+          <p class="text-xs text-stone-500 leading-none mt-0.5">Révéler ses talents pour choisir sa voie</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm text-stone-600 font-medium">
+        <a href="/#services" class="hover:text-violet-700 transition-colors">Services</a>
+        <a href="/#fonctionnement" class="hover:text-violet-700 transition-colors">Fonctionnement</a>
+        <a href="/#avis" class="hover:text-violet-700 transition-colors">Témoignages</a>
+        <a href="/#apropos" class="hover:text-violet-700 transition-colors">À propos</a>
+        <a href="/#faq" class="hover:text-violet-700 transition-colors">FAQ</a>
+      </nav>
+
+      <a href="/#contact"
+         class="rounded-full bg-violet-600 text-white text-sm font-medium px-5 py-2.5 shadow-lg hover:bg-violet-700 transition-all active:scale-95">
+        Me contacter
+      </a>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative overflow-hidden py-20 sm:py-28">
+    <div class="absolute inset-0 bg-gradient-to-br from-violet-50 via-stone-50 to-indigo-50 -z-10"></div>
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-violet-100/40 rounded-full blur-3xl -z-10 translate-x-1/3 -translate-y-1/3"></div>
+
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <!-- Breadcrumb -->
+      <nav class="flex items-center gap-2 text-xs text-stone-400 mb-10 reveal">
+        <a href="/" class="hover:text-violet-600 transition-colors">Accueil</a>
+        <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+        <span class="text-stone-600 font-medium">Orientation scolaire</span>
+      </nav>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="reveal">
+          <p class="uppercase tracking-[0.28em] text-xs text-violet-500 font-medium mb-5">Lycéens &amp; Étudiants</p>
+          <h1 class="font-heading text-4xl sm:text-5xl font-bold text-stone-900 leading-tight mb-6">
+            L'orientation scolaire,<br/>
+            <em class="text-violet-600 not-italic">un cap choisi</em><br/>
+            avec confiance
+          </h1>
+          <p class="text-lg text-stone-600 leading-relaxed mb-8">
+            Envoltalents propose des formules d'accompagnement personnalisées pour aider lycéens et étudiants à définir leur orientation. Grâce à des questionnaires psychométriques reconnus, chaque jeune découvre sa personnalité, ses talents et ses intérêts pour choisir ses études en pleine connaissance de lui-même.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="/#contact"
+               class="rounded-full bg-violet-600 text-white font-medium px-8 py-3.5 shadow-lg hover:bg-violet-700 transition-all active:scale-95 text-base text-center">
+              Premier entretien gratuit
+            </a>
+            <a href="#formules"
+               class="rounded-full border-2 border-violet-600 text-violet-700 font-medium px-8 py-3.5 hover:bg-violet-50 transition-all active:scale-95 text-base text-center">
+              Voir les formules
+            </a>
+          </div>
+          <div class="mt-8 inline-flex items-center gap-2 bg-white border border-violet-100 rounded-full px-4 py-2 text-sm text-stone-600 shadow-sm">
+            <svg class="w-4 h-4 text-violet-500" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+            Premier entretien offert &amp; sans engagement
+          </div>
+        </div>
+
+        <div class="reveal delay-2">
+          <div class="rounded-3xl overflow-hidden shadow-xl aspect-[4/3]">
+            <img
+              src="https://images.unsplash.com/photo-1529390079861-591de354faf5?w=800&q=80"
+              alt="Orientation scolaire lycéens étudiants"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== VIDÉO ===================== -->
+  <section class="py-12 sm:py-16 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-8">
+        <p class="uppercase tracking-[0.28em] text-xs text-stone-500 mb-3">En vidéo</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900">L'orientation scolaire expliquée</h2>
+      </div>
+      <div class="rounded-3xl overflow-hidden shadow-xl border border-stone-200 aspect-video">
+        <iframe
+          class="w-full h-full"
+          src="https://www.youtube.com/embed/xGOzUNz71t8"
+          title="L'orientation scolaire expliquée"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== OBJECTIFS ===================== -->
+  <section class="py-12 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.28em] text-xs text-stone-500 mb-3">La démarche</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900">Pourquoi un accompagnement en orientation ?</h2>
+        <p class="mt-4 text-stone-500 max-w-2xl mx-auto text-sm leading-relaxed">Choisir ses études est l'une des décisions les plus importantes d'un jeune. Un accompagnement structuré permet de faire ce choix avec clarté, confiance et en pleine connaissance de soi.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-1">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Connaissance de soi</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Découvrir ses traits de personnalité, ses forces et ses valeurs grâce à des questionnaires psychométriques reconnus (facteurs de personnalité et intérêts professionnels).</p>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-2">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m1.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Exploration des métiers</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Une enquête métiers guidée pour s'impliquer activement dans la recherche de formations et de secteurs en adéquation avec sa personnalité et ses aspirations.</p>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-3">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Un plan d'action clair</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Un bilan documenté et personnalisé avec un plan d'actions concret, des pistes de formation et, pour les lycéens, des conseils pratiques pour Parcoursup.</p>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-1">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Confiance en soi</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Reprendre confiance en ses capacités, se remobiliser et devenir acteur de son avenir avec maturité — en particulier pour les jeunes qui traversent une période de doute.</p>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-2">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Implication du jeune</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Le jeune est au cœur du processus. Les entretiens peuvent se faire avec ou sans les parents. Il repart avec ses propres conclusions, ses propres choix et un regard neuf sur lui-même.</p>
+        </div>
+
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-3">
+          <div class="w-10 h-10 rounded-full bg-violet-100 flex items-center justify-center mb-4">
+            <svg class="w-5 h-5 text-violet-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+          </div>
+          <h3 class="font-heading text-base font-semibold text-stone-900 mb-2">Outils reconnus</h3>
+          <p class="text-stone-500 text-sm leading-relaxed">Des questionnaires psychométriques éprouvés (facteurs de personnalité, intérêts professionnels) pour une exploration fiable et objective, adaptée à chaque profil.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FORMULES ===================== -->
+  <section id="formules" class="py-12 sm:py-16 lg:py-20 bg-stone-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.28em] text-xs text-stone-500 mb-3">Adapté à chaque situation</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900">Deux formules d'accompagnement</h2>
+        <p class="mt-4 text-stone-500 max-w-xl mx-auto text-sm leading-relaxed">Que votre enfant soit au lycée ou déjà dans le supérieur, une formule est adaptée à sa situation et à ses besoins.</p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+        <!-- Lycéens -->
+        <div class="rounded-3xl border border-stone-200 bg-white shadow-sm hover:shadow-lg transition-shadow duration-300 overflow-hidden reveal delay-1">
+          <div class="bg-violet-50 border-b border-violet-100 px-7 py-6">
+            <p class="uppercase tracking-[0.2em] text-xs text-violet-500 font-medium mb-2">Formule lycéens</p>
+            <h3 class="font-heading text-2xl font-bold text-stone-900">Choisir son orientation</h3>
+            <p class="text-stone-500 text-sm mt-2">4 ou 5 entretiens · Bilan personnalisé · Conseils Parcoursup</p>
+          </div>
+          <div class="px-7 py-6">
+            <p class="text-stone-600 text-sm leading-relaxed mb-5">Vous voulez <strong class="text-stone-800">choisir votre futur métier</strong> ou <strong class="text-stone-800">anticiper Parcoursup</strong> sereinement. Cet accompagnement vous permet de :</p>
+            <ul class="space-y-2.5 mb-6">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Découvrir votre personnalité et vos talents</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Explorer les métiers en adéquation avec votre profil</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Choisir vos études avec confiance et clarté</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Construire un plan d'actions + conseils Parcoursup</span>
+              </li>
+            </ul>
+            <div class="rounded-xl bg-stone-50 border border-stone-100 p-4 mb-6 text-xs text-stone-500 leading-relaxed">
+              <p class="font-medium text-stone-700 mb-1">Ce parcours comprend :</p>
+              4 ou 5 entretiens de 1h30 à 2h (avec/sans parents) · Questionnaire de personnalité · Questionnaire d'intérêts professionnels · Enquête métiers · Bilan documenté &amp; plan d'actions
+            </div>
+            <a href="/#contact"
+               class="block w-full text-center rounded-full bg-violet-600 text-white font-medium py-3 shadow hover:bg-violet-700 transition-all active:scale-95 text-sm">
+              Demander un entretien gratuit
+            </a>
+          </div>
+        </div>
+
+        <!-- Étudiants -->
+        <div class="rounded-3xl border-2 border-violet-600 bg-white shadow-lg overflow-hidden reveal delay-2 relative">
+          <div class="absolute top-5 right-5">
+            <span class="rounded-full bg-violet-600 text-white text-xs font-medium px-3 py-1">Réorientation</span>
+          </div>
+          <div class="bg-violet-600 px-7 py-6">
+            <p class="uppercase tracking-[0.2em] text-xs text-violet-200 font-medium mb-2">Formule étudiants</p>
+            <h3 class="font-heading text-2xl font-bold text-white">Se réorienter</h3>
+            <p class="text-violet-200 text-sm mt-2">6 entretiens · Bilan personnalisé · Reprendre confiance</p>
+          </div>
+          <div class="px-7 py-6">
+            <p class="text-stone-600 text-sm leading-relaxed mb-5">Études démarrées mais <strong class="text-stone-800">manque de motivation</strong> ou <strong class="text-stone-800">envie de changer de voie</strong> ? Ce parcours vous permet de :</p>
+            <ul class="space-y-2.5 mb-6">
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Mieux vous connaître et reprendre confiance en vous</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Identifier vos talents et vos intérêts profonds</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Redéfinir vos études ou votre futur métier</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <svg class="w-4 h-4 text-violet-500 shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                <span class="text-stone-600 text-sm">Repartir avec un projet clair et motivant</span>
+              </li>
+            </ul>
+            <div class="rounded-xl bg-stone-50 border border-stone-100 p-4 mb-6 text-xs text-stone-500 leading-relaxed">
+              <p class="font-medium text-stone-700 mb-1">Ce parcours comprend :</p>
+              6 entretiens de 1h30 à 2h · Questionnaire de personnalité · Questionnaire d'intérêts professionnels · Enquête métiers · Bilan documenté &amp; personnalisé
+            </div>
+            <a href="/#contact"
+               class="block w-full text-center rounded-full bg-violet-600 text-white font-medium py-3 shadow hover:bg-violet-700 transition-all active:scale-95 text-sm">
+              Demander un entretien gratuit
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== TÉMOIGNAGE ===================== -->
+  <section class="py-12 sm:py-16 lg:py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.28em] text-xs text-stone-500 mb-3">Ils l'ont vécu</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900">Ce que disent les familles</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- Témoignage réel -->
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-1">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-stone-600 text-sm leading-relaxed italic mb-5">
+            « Bénédicte nous a permis de prendre le temps d'épauler Léopold dans ses choix d'orientation. Son parcours en 5 étapes est sérieux et qualitatif. Léopold a changé d'optique d'études. Il se sent libéré, peut se remobiliser, avancer et être acteur de son devenir avec maturité. »
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-violet-100 text-violet-700 font-semibold flex items-center justify-center text-sm">C</div>
+            <div>
+              <p class="font-medium text-stone-900 text-sm">Claire</p>
+              <p class="text-xs text-stone-400">Orientation lycéen · Avril 2023</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage fictif 1 -->
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-2">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-stone-600 text-sm leading-relaxed italic mb-5">
+            « Notre fille était complètement perdue en terminale et angoissée à l'idée de remplir Parcoursup. Grâce à Bénédicte, elle a enfin pu mettre des mots sur ce qu'elle aime vraiment. Elle a déposé ses vœux avec conviction, et a été acceptée dans sa première formation. Un immense soulagement pour toute la famille. »
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-violet-100 text-violet-700 font-semibold flex items-center justify-center text-sm">N</div>
+            <div>
+              <p class="font-medium text-stone-900 text-sm">Nathalie</p>
+              <p class="text-xs text-stone-400">Orientation lycéenne · 2024</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Témoignage fictif 2 -->
+        <div class="rounded-2xl border border-stone-200 bg-stone-50 p-6 reveal delay-3">
+          <div class="flex gap-1 mb-4">
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <svg class="w-4 h-4 text-amber-400" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </div>
+          <blockquote class="text-stone-600 text-sm leading-relaxed italic mb-5">
+            « Après une première année de BTS qui s'est mal passée, j'étais perdu et je ne savais plus vers quoi me diriger. Bénédicte m'a aidé à faire le point, à me réconcilier avec mes capacités et à identifier une voie qui me correspond vraiment. Je remercie mes parents de m'avoir proposé cet accompagnement. »
+          </blockquote>
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-full bg-violet-100 text-violet-700 font-semibold flex items-center justify-center text-sm">K</div>
+            <div>
+              <p class="font-medium text-stone-900 text-sm">Kévin</p>
+              <p class="text-xs text-stone-400">Réorientation étudiant · 2023</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section class="py-12 sm:py-16 lg:py-20 bg-stone-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <div class="text-center mb-12">
+        <p class="uppercase tracking-[0.28em] text-xs text-stone-500 mb-3">Vos questions</p>
+        <h2 class="font-heading text-3xl sm:text-4xl font-bold text-stone-900">FAQ Orientation scolaire</h2>
+      </div>
+
+      <div class="space-y-3">
+
+        <details class="group rounded-2xl border border-stone-200 bg-white overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none hover:bg-stone-50 transition-colors">
+            <span class="font-medium text-stone-900">À quel moment de l'année consulter pour l'orientation ?</span>
+            <span class="faq-icon shrink-0 w-6 h-6 rounded-full border border-stone-300 flex items-center justify-center text-stone-500 group-open:bg-violet-600 group-open:border-violet-600 group-open:text-white transition-all">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 pt-4">
+            Le plus tôt est le mieux. Pour un lycéen, débuter en début de Terminale (septembre-octobre) permet de travailler sereinement avant les échéances Parcoursup (janvier-mars). Pour un étudiant en réorientation, il n'y a pas de mauvais moment — mieux vaut agir dès que le doute s'installe plutôt qu'attendre.
+          </div>
+        </details>
+
+        <details class="group rounded-2xl border border-stone-200 bg-white overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none hover:bg-stone-50 transition-colors">
+            <span class="font-medium text-stone-900">Les parents participent-ils aux entretiens ?</span>
+            <span class="faq-icon shrink-0 w-6 h-6 rounded-full border border-stone-300 flex items-center justify-center text-stone-500 group-open:bg-violet-600 group-open:border-violet-600 group-open:text-white transition-all">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 pt-4">
+            C'est possible selon votre souhait et celui du jeune. Certains entretiens peuvent se faire avec les parents, d'autres en individuel avec le jeune pour lui permettre de s'exprimer librement. L'objectif est que le jeune soit acteur de sa démarche et construise ses propres choix, dans un espace bienveillant.
+          </div>
+        </details>
+
+        <details class="group rounded-2xl border border-stone-200 bg-white overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none hover:bg-stone-50 transition-colors">
+            <span class="font-medium text-stone-900">Quelle est la différence avec un conseiller d'orientation classique ?</span>
+            <span class="faq-icon shrink-0 w-6 h-6 rounded-full border border-stone-300 flex items-center justify-center text-stone-500 group-open:bg-violet-600 group-open:border-violet-600 group-open:text-white transition-all">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 pt-4">
+            L'accompagnement d'Envoltalents est beaucoup plus personnalisé et approfondi qu'une consultation d'orientation classique. Grâce à des questionnaires psychométriques, plusieurs entretiens individuels et une approche coaching, le jeune explore en profondeur sa personnalité, ses motivations et ses intérêts — et non simplement ses résultats scolaires. Il repart avec un bilan documenté et un plan d'actions concret.
+          </div>
+        </details>
+
+        <details class="group rounded-2xl border border-stone-200 bg-white overflow-hidden">
+          <summary class="flex items-center justify-between gap-4 p-5 cursor-pointer list-none select-none hover:bg-stone-50 transition-colors">
+            <span class="font-medium text-stone-900">Les séances se font-elles en présentiel ou en visio ?</span>
+            <span class="faq-icon shrink-0 w-6 h-6 rounded-full border border-stone-300 flex items-center justify-center text-stone-500 group-open:bg-violet-600 group-open:border-violet-600 group-open:text-white transition-all">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 6v6m0 0v6m0-6h6m-6 0H6"/></svg>
+            </span>
+          </summary>
+          <div class="px-5 pb-5 text-stone-600 text-sm leading-relaxed border-t border-stone-100 pt-4">
+            Les deux sont possibles. Les séances peuvent se tenir en présentiel à Latresne (Bordeaux Rive Droite) ou Bordeaux centre, ou en visioconférence depuis toute la France. Le format est défini ensemble selon les préférences du jeune et de la famille.
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA FINAL ===================== -->
+  <section class="py-12 sm:py-16 bg-violet-600">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <p class="uppercase tracking-[0.28em] text-xs text-violet-200 mb-4">Passez à l'action</p>
+      <h2 class="font-heading text-3xl sm:text-4xl font-bold text-white mb-5">Aidez votre enfant à trouver sa voie</h2>
+      <p class="text-violet-100 text-lg mb-8 leading-relaxed">
+        Un premier échange gratuit et sans engagement pour faire le point sur la situation du jeune et voir quel accompagnement lui correspond le mieux.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="tel:0607732889"
+           class="rounded-full bg-white text-violet-700 font-semibold px-8 py-3.5 shadow-lg hover:bg-violet-50 transition-all active:scale-95">
+          Appeler le 06 07 73 28 89
+        </a>
+        <a href="mailto:envoltalents@gmail.com"
+           class="rounded-full border-2 border-white text-white font-semibold px-8 py-3.5 hover:bg-white/10 transition-all active:scale-95">
+          Écrire un e-mail
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="bg-stone-900 text-stone-400 py-10">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6">
+        <a href="/" class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-violet-600 flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+            </svg>
+          </div>
+          <div>
+            <p class="font-heading text-stone-200 font-semibold text-sm">Envoltalents</p>
+            <p class="text-xs text-stone-500">Révéler ses talents pour choisir sa voie</p>
+          </div>
+        </a>
+
+        <nav class="flex flex-wrap justify-center gap-x-5 gap-y-1 text-xs">
+          <a href="/" class="hover:text-stone-200 transition-colors">Accueil</a>
+          <a href="/coaching" class="hover:text-stone-200 transition-colors">Coaching</a>
+          <a href="/bilan-de-competences" class="hover:text-stone-200 transition-colors">Bilan de compétences</a>
+          <a href="/orientation-scolaire" class="text-stone-200 font-medium">Orientation scolaire</a>
+          <a href="/#contact" class="hover:text-stone-200 transition-colors">Contact</a>
+          <a href="#" class="hover:text-stone-200 transition-colors">Mentions légales</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <a href="https://www.facebook.com/Envoltalents-100113604979954/" target="_blank" rel="noopener"
+             class="w-8 h-8 rounded-full border border-stone-700 flex items-center justify-center hover:border-stone-500 hover:text-stone-200 transition-colors">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="http://www.linkedin.com/in/envoltaltents" target="_blank" rel="noopener"
+             class="w-8 h-8 rounded-full border border-stone-700 flex items-center justify-center hover:border-stone-500 hover:text-stone-200 transition-colors">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-stone-800 text-center text-xs text-stone-600">
+        © 2024 Envoltalents – Bénédicte Héreau – Latresne (Bordeaux) – SIREN 853728772
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '0';
+          entry.target.style.animationPlayState = 'running';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+    reveals.forEach(el => {
+      el.style.opacity = '0';
+      el.style.animationPlayState = 'paused';
+      observer.observe(el);
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
